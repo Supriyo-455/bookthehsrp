@@ -3,19 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/profileFragment">
-
+    app:startDestination="@id/homeFragment2">
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragment2"
         android:name="com.example.bookthehsrp.ui.fragment.HomeFragment"
-        android:label="HomeFragment" />
-    <fragment
-        android:id="@+id/registrationFragment"
-        android:name="com.example.bookthehsrp.ui.fragment.RegistrationFragment"
-        android:label="RegistrationFragment" />
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment2_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.bookthehsrp.ui.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.bookthehsrp.ui.fragment.RegistrationFragment"
+        android:label="registration_fragment"
+        tools:layout="@layout/registration_fragment" >
+        <action
+            android:id="@+id/action_registrationFragment_to_paymentGatwayFragment"
+            app:destination="@id/paymentGatwayFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/paymentGatwayFragment"
+        android:name="com.example.bookthehsrp.ui.fragment.PaymentGatwayFragment"
+        android:label="fragment_payment_gatway"
+        tools:layout="@layout/fragment_payment_gatway" >
+        <action
+            android:id="@+id/action_paymentGatwayFragment_to_homeFragment22"
+            app:destination="@id/homeFragment2"
+            app:popUpTo="@id/homeFragment2"/>
+    </fragment>
 </navigation>

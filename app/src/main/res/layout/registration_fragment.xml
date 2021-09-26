@@ -4,7 +4,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.RegistrationFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,6 +108,7 @@
 
 
         <Button
+            android:id="@+id/button_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
