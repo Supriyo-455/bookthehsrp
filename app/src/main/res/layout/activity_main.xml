@@ -18,6 +18,6 @@
 
         app:defaultNavHost="true"
         app:navGraph="@navigation/main_nav"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/registration_fragment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

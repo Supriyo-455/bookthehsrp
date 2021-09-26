@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_accent">#FFC107</color>
     <color name="main_accent_dark">#FF9800</color>
+    <color name="ultramarine">#304FFE</color>
+    <color name="ultramarine_dark">#0F2188</color>
 </resources>
