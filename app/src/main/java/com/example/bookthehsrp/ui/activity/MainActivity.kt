@@ -1,7 +1,8 @@
-package com.example.bookthehsrp
+package com.example.bookthehsrp.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.bookthehsrp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
