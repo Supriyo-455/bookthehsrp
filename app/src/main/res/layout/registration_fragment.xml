@@ -99,14 +99,18 @@
             android:inputType="number"
             android:padding="30dp"/>
 
+        <ExpandableListView
+            android:id="@+id/vehicle_type"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
             android:layout_gravity="right"
-            android:textColor="@color/white"
-            />
+            android:text="Submit"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
