@@ -7,34 +7,61 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.example.bookthehsrp.ui.fragment.HomeFragment"
-        android:label="home_fragment"
+        android:label="home"
         tools:layout="@layout/home_fragment">
         <action
             android:id="@+id/action_homeFragment2_to_registrationFragment"
-            app:destination="@id/registrationFragment" />
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.bookthehsrp.ui.fragment.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.bookthehsrp.ui.fragment.RegistrationFragment"
-        android:label="registration_fragment"
-        tools:layout="@layout/registration_fragment" >
+        android:label="registration"
+        tools:layout="@layout/registration_fragment">
         <action
             android:id="@+id/action_registrationFragment_to_paymentGatwayFragment"
-            app:destination="@id/paymentGatwayFragment"/>
+            app:destination="@id/paymentGatwayFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/paymentGatwayFragment"
         android:name="com.example.bookthehsrp.ui.fragment.PaymentGatwayFragment"
-        android:label="fragment_payment_gatway"
-        tools:layout="@layout/fragment_payment_gatway" >
+        android:label="payment gatway"
+        tools:layout="@layout/fragment_payment_gatway">
         <action
             android:id="@+id/action_paymentGatwayFragment_to_homeFragment22"
             app:destination="@id/homeFragment2"
-            app:popUpTo="@id/homeFragment2"/>
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/homeFragment2" />
     </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.bookthehsrp.ui.fragment.SettingsFragment"
+        android:label="settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/aboutUsFragment2"
+        android:name="com.example.bookthehsrp.ui.fragment.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/editProfileFragment2"
+        android:name="com.example.bookthehsrp.ui.fragment.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

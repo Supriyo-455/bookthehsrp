@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="User profile"
+        android:id="@+id/profileFragment"
+        android:menuCategory="secondary" />
+    <item
+        android:title="Edit Profile"
+        android:id="@+id/editProfileFragment"
+        android:menuCategory="secondary" />
+    <item
+        android:title="About us"
+        android:id="@+id/aboutUsFragment"
+        android:menuCategory="secondary" />
+    <item
+        android:title="Settings"
+        android:id="@+id/settingsFragment"
+        android:menuCategory="secondary" />
+</menu>
